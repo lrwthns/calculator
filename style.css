@@ -1,4 +1,4 @@
-/* okay what do I put here */
+
 body {
     display: grid;
     background-color: rgb(228, 228, 228);
@@ -6,74 +6,69 @@ body {
     align-content: center;
 }
 
-.container {
-    padding: 1vw;
+#container {
+    width: 20rem;
+    height: 37rem;
+    padding: 1.5rem;
     background-color:rgb(177, 177, 177);
+    border: none;
+    border-radius: 3rem;
+    box-shadow: 0.02rem 0.02rem 0.2rem 0 rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
-    grid-gap: 5vw;
-    border: 0.5vw solid transparent;
-    border-radius: 2.5vw;
-    box-shadow: 0.02vw 0.02vw 0.2vw 0 rgb(0, 0, 0);
 }
 
 #display {
-    grid-row: 1/2;
-    width: 18vw;
-    height: 7vw;
-    font-size: 2vw;
+    font-size: 3rem;
     font-family: monospace;
     color: rgb(69, 176, 226);
     background-color: rgb(44, 44, 44);
-    padding: 1.5vw;
-    border-radius: 2vw;
-    margin-bottom: 1vw;
-    box-shadow: 0.03vw 0.03vw 0.6w 0 black inset;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0.08rem 0.08rem 0.4rem 0 black inset;
     word-wrap: break-word;
     overflow: hidden;
-    text-align: right;
 }
 
-.buttons {
-    grid-row: 2/3;
-    width: 21vw;
-    height: 25vw;
+#buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-gap: 0.5vw 0.5vw;
+    grid-gap: 0.5rem;
 }
 
 .numbers {
-    font-size: 2vw;
+    font-size: 2rem;
+    padding: 1rem;
     color: white;
     background-color: rgb(80, 80, 80);
-    border: 1vw solid transparent;
-    border-radius: 6vw; 
+    border: none;
+    border-radius: 3rem; 
     outline: none;
-    box-shadow: 0.03vw 0.03vw 0.2vw 0 rgb(0, 0, 0);
+    box-shadow: 0.05rem 0.05rem 0.2rem 0 rgb(0, 0, 0);
 }
 
 .numbers:hover {
-    background-color: rgb(61, 77, 102);
+    color: rgb(37, 37, 37);
+    background-color: rgb(240, 240, 240);
     border: none;
     box-shadow: none;
     transition: all .15s ease-in-out;
-    transform: translateY(-0.2vw);
-    /*position: relative;
-    animation: bounce 0.1s 1 linear;
-    animation-fill-mode: forwards;*/
+    transform: translateY(-0.2rem);
 }
 
 .operands {
-    font-size: 2vw;
+    font-size: 2rem;
+    padding: 1rem;
     font-family: monospace;
     color: rgb(255, 255, 255);
     background-color: rgb(54, 54, 54);
     border: none;
-    border: 1vw solid transparent;
-    border-radius: 6vw; 
+    border-radius: 3rem; 
     outline: none;
-    box-shadow: 0.03vw 0.03vw 0.2vw 0 rgb(24, 24, 24);
+    box-shadow: 0.05rem 0.05rem 0.2rem 0 rgb(24, 24, 24);
 }
 
 .operands:hover {
@@ -81,18 +76,19 @@ body {
     background-color: rgb(235, 130, 33);
     box-shadow: none;
     transition: all .15s ease-in-out;
-    transform: translateY(-0.2vw);
+    transform: translateY(-0.2rem);
 }
 
 #decimal, #equals, #clear, #backspace {
-    font-size: 2vw;
+    font-size: 2rem;
+    padding: 1rem;
     font-family: monospace;
     color: rgb(255, 255, 255);
     background-color: rgb(54, 54, 54);
     border: none;
-    border-radius: 6vw; 
+    border-radius: 3rem; 
     outline: none;
-    box-shadow: 0.03vw 0.03vw 0.2vw 0 rgb(24, 24, 24);
+    box-shadow: 0.05rem 0.05rem 0.2rem 0 rgb(24, 24, 24);
 }
 
 #decimal {
@@ -104,7 +100,7 @@ body {
     background-color: rgb(240, 240, 240);
     box-shadow: none;
     transition: all .15s ease-in-out;
-    transform: translateY(-0.2vw);
+    transform: translateY(-0.2rem);
 }
 
 #clear {
@@ -121,24 +117,21 @@ body {
     border: none;
     box-shadow: none;
     transition: all .15s ease-in-out;
-    transform: translateY(-0.2vw);
+    transform: translateY(-0.2rem);
 }
 
 .numbers:active, .operands:active, #decimal:active, #equals:active, #backspace:active, #clear:active {
-    transform: translateY(0vw);
+    transform: translateY(0.1rem);
 }
 
 #thecalc {
-    font-size: 1vw;
+    font-size: 1rem;
     font-family: monospace;
     color: rgb(255, 255, 255);
     background-color: rgb(26, 142, 209);
     border: none;
-    border-radius: 6vw; 
+    border-radius: 3rem; 
     grid-column: 3/5;
     outline: none;
-    box-shadow: 0.03vw 0.03vw 0.2vw 0 rgb(24, 24, 24);
+    box-shadow: 0.05rem 0.05rem 0.2rem 0 rgb(24, 24, 24);
 }
-
-/*@keyframes bounce { 0% { top: 0; } 30% { top: -0.05vw; } 70% { top: -0.10vw; } 100% { top: -0.25vw; } }
-*/
